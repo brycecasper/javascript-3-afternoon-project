@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color, make, model, year} = carDetails;
 
 
 ////////// PROBLEM 2 //////////
@@ -33,7 +33,7 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting({firstName, lastName, title}) {
   //Code Here
   
   // Do not edit the code below.
@@ -54,7 +54,9 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let totalPopulation = ({utah, california, texas, arizona}) => {
+  return utah + california + texas + arizona
+};
 
 
 ////////// PROBLEM 4 //////////
@@ -68,7 +70,14 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let ingredients = (obj) => {
+  let {carb, fat, protein} = obj
+  let arr = []
+  for (let key in obj){
+    arr.push(obj[key])
+  }
+  return arr
+};
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +95,9 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function largeNumbers({first, second, third}){
+  
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +109,7 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function numberGroups( {a, b, c} ){
+  return Math.max
+}
 
